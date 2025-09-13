@@ -30,4 +30,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == NEW_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK){
+            data?.getStringExtra(EXTRA_PARAMETER).let { parametro ->
+                amb.parametroTv.text = parametro
+            }
+        }
+    }
 }
