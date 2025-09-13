@@ -3,6 +3,7 @@ package br.edu.ifsp.scl.ads.prdm.sc303898x.intents
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.edu.ifsp.scl.ads.prdm.sc303898x.intents.MainActivity.Constants.EXTRA_PARAMETER
 import br.edu.ifsp.scl.ads.prdm.sc303898x.intents.databinding.ActivityNewBinding
 
 class NewActivity : AppCompatActivity() {
@@ -27,6 +28,10 @@ class NewActivity : AppCompatActivity() {
                 })
                 finish()
             }
+        }
+
+        intent.getStringExtra(EXTRA_PARAMETER)?.let {
+            anb.parametroEt.setText(it)
         }
     }
 }

@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         amb.entrarParametroBt.setOnClickListener{
             Intent(this@MainActivity, NewActivity::class.java).apply {
+                putExtra(EXTRA_PARAMETER, amb.parametroTv.text.toString())
                 startActivityForResult(this@apply, NEW_ACTIVITY_REQUEST_CODE)
             }
         }
