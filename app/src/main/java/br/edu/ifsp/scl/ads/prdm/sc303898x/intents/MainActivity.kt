@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     
     companion object Constants{
         const val NEW_ACTIVITY_REQUEST_CODE = 0
+        const val EXTRA_PARAMETER = "EXTRA_PARAMETER"
     }
     
     override fun onCreate(savedInstanceState: Bundle?) {
