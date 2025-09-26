@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/view_mi"
+        android:icon="@drawable/ic_navegador"
+        android:title="Abrir navegador"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Outras intents"
+        app:showAsAction="never">
+
+    <menu>
+        <item
+            android:id="@+id/call_mi"
+            android:title="Chamar número" />
+
+        <item
+            android:id="@+id/dial_mi"
+            android:title="Abrir discador" />
+
+        <item
+            android:id="@+id/pick_mi"
+            android:title="Pegar imagem" />
+
+        <item
+            android:id="@+id/chosser_mi"
+            android:title="Selecionar app" />
+    </menu>
+
+    </item>
+
+
+</menu>
